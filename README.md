@@ -12,15 +12,69 @@
 
 ---
 
-##  Features
 
--  Full CRUD operations for Customers and Orders
--  Data persistence using SQLite and JSON
--  User authentication with roles (`Admin`, `User`)
--  Summary report generation
--  Import/Export data in JSON format
--  Dual UI: Command Line Interface and GUI (Swing)
--  Input validation and robust error handling
+##  Objectives
+
+- Implement full **CRUD operations** for customers and orders.
+- Provide both **CLI and GUI interfaces** for user interaction.
+- Use **SQLite with JDBC** for database management.
+- Integrate **user authentication** and **role-based access control**.
+- Enable **data import/export** via JSON files.
+- Allow **report generation** for key statistics and metrics.
+- Follow modular and clean code practices.
+- Ensure input validation and error handling throughout.
+
+##  Project Requirement List
+
+The following list outlines the core features and deliverables that were implemented to meet the project’s objectives:
+
+- User Authentication System
+
+Users must log in using a valid username and password before accessing application features.
+
+- Role-Based Access Control
+  
+Users are assigned roles (Admin or User), which define their permissions. Only Admins can delete or clear data.
+
+- CRUD Operations for Customers
+  
+Users can create, read, and (Admins only) delete customer records.
+
+- CRUD Operations for Orders
+  
+Users can create, read, update order status, and (Admins only) delete orders.
+
+- Graphical User Interface (GUI)
+  
+A Swing-based GUI allows users to interact with the system through tabs and forms.
+
+- Command Line Interface (CLI)
+  
+The application can also be operated through a text-based menu in the terminal.
+
+- Input Validation
+  
+Email format, numeric IDs, quantity fields, and required fields are all validated to prevent invalid input.
+
+- SQLite Database Integration
+  
+Data is stored persistently in an SQLite database using JDBC. All core entities have their own tables.
+
+- Data Import and Export (JSON)
+
+Users can export and import customer and order data via JSON files.
+
+- Summary Report Generation
+
+The system can generate a report summarizing the number of customers, number of orders, and order status frequencies.
+
+- Error Handling
+  
+The system includes appropriate try/catch blocks and user-friendly messages for runtime exceptions and SQL issues.
+
+- Modular Architecture
+  
+The application is divided into clear modules: managers, models, GUI, and utility classes, promoting reusability and clarity.
 
 ##  Technologies Used
 
