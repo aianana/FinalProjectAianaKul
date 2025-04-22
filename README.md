@@ -217,3 +217,23 @@ User credentials and roles are stored in the users SQLite table. Passwords are s
 Admin-only option to wipe all customer and order data.
 
 ![image](https://github.com/user-attachments/assets/6b6c9f6a-86b7-4842-b196-caef0ea18fe3)
+
+##  Files Used for Data Storage 
+
+The following files are used to store and persist application data across sessions:
+
+| File Path                  | Description                                        | Format       |
+|----------------------------|----------------------------------------------------|--------------|
+| `data/app.db`              | Primary SQLite database for storing users, customers, and orders | SQLite DB   |
+| `data/customers.json`      | Backup or alternative storage for customer data    | JSON         |
+| `data/orders.json`         | Backup or alternative storage for order data       | JSON         |
+| `export/customers.json`    | Exported list of customers                         | JSON         |
+| `export/orders.json`       | Exported list of orders                            | JSON         |
+| `import/customers.json`    | Customer data available for import (optional)      | JSON         |
+| `import/orders.json`       | Order data available for import (optional)         | JSON         |
+
+###  Summary
+
+- All core data is stored in **`app.db`**, ensuring persistence via **SQLite + JDBC**.
+- JSON files are used for optional **import/export** features.
+- These files support full **data portability, backup, and verification** across sessions.
