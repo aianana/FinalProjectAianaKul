@@ -13,7 +13,7 @@ public class OrderManager {
     private List<Order> orders;
 
     public OrderManager() {
-        this.orders = FileManager.loadOrders(); // Загружаем из файла
+        this.orders = FileManager.loadOrders(); 
     }
 
 
