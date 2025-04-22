@@ -237,3 +237,7 @@ The following files are used to store and persist application data across sessio
 - All core data is stored in **`app.db`**, ensuring persistence via **SQLite + JDBC**.
 - JSON files are used for optional **import/export** features.
 - These files support full **data portability, backup, and verification** across sessions.
+
+## Presentation Link:
+
+https://www.canva.com/design/DAGlRFrVRns/GdSFvLtFCQlMRKm5KvuWGw/edit?utm_content=DAGlRFrVRns&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
