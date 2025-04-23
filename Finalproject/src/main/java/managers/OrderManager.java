@@ -13,7 +13,7 @@ public class OrderManager {
     private List<Order> orders;
 
     public OrderManager() {
-        this.orders = FileManager.loadOrders(); // Загружаем из файла
+        this.orders = FileManager.loadOrders(); 
     }
 
 
@@ -155,7 +155,7 @@ public class OrderManager {
 
             stmt.setString(1, customerId);
             try (ResultSet rs = stmt.executeQuery()) {
-                return rs.next(); // Возвращает true, если клиент найден
+                return rs.next(); //true if client not found
             }
 
         } catch (SQLException e) {
