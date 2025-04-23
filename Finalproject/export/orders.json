@@ -1,0 +1,13 @@
+[ {
+  "orderId" : "e66ab365-4884-4437-b3be-570aea64c16d",
+  "customerId" : "1",
+  "product" : "soap",
+  "quantity" : 2,
+  "status" : "Delivered"
+}, {
+  "orderId" : "8b81a54e-2577-42df-a3c6-fe7090d800b7",
+  "customerId" : "1",
+  "product" : "Laptop",
+  "quantity" : 2,
+  "status" : "Delivered"
+} ]
